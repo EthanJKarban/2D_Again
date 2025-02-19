@@ -7,6 +7,8 @@ public class Movement2D : MonoBehaviour
     [Header("Components")]
     private Rigidbody2D _rb;
 
+    [Header("Layer Masks")]
+    [SerializeField] private LayerMask _groundLayer;
 
     [Header("Movement Variables")]
     [SerializeField] private float _movementAcceleration = 50f;
@@ -17,6 +19,12 @@ public class Movement2D : MonoBehaviour
 
     [Header("Jump Variables")]
     [SerializeField] private float _jumpForce = 12f;
+    [SerializeField] private float _airLinearDrag = 2.5f;
+    private bool _canJump => (Input.GetButtonDown("Jump")) && _onGround;
+
+    [Header("Ground Collision Variables")]
+    [SerializeField] private float _groundRaycastLength;
+    private bool _onGround;
 
     private void Start()
     {
@@ -25,16 +33,22 @@ public class Movement2D : MonoBehaviour
     private void Update()
     {
         _horizontalDirection = GetInput().x;
-        if (Input.GetButtonDown("Jump")) Jump();
-        {
-
-        }
     }
 
     private void FixedUpdate()
     {
+        CheckCollisions();
         MoveCharacter();
         ApplyingLinearDrag();
+        if (_canJump) Jump();
+        if (_onGround)
+        {
+            ApplyingLinearDrag();
+        }
+        else
+        {
+            ApplyingLinearDrag();
+        }
     }
 
 
@@ -61,9 +75,26 @@ public class Movement2D : MonoBehaviour
             _rb.linearDamping = 0f;
         }
     }
+    private void ApplyingAirLinearDrag()
+    {
+        {
+            //_rb.drag = _airLinearDrag = 0f;
+        }
+    }
     private void Jump()
     {
         _rb.linearVelocity = new Vector2(_rb.linearVelocity.x, 0f);
         _rb.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
+    }
+
+    private void CheckCollisions()
+    {
+        _onGround = Physics2D.Raycast(transform.position, Vector2.down, _groundRaycastLength, _groundLayer);
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawLine(transform.position, transform.position + Vector3.down *  _groundRaycastLength);
     }
 }
