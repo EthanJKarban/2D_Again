@@ -13,13 +13,16 @@ public class Movement2D : MonoBehaviour
     [Header("Movement Variables")]
     [SerializeField] private float _movementAcceleration = 50f;
     [SerializeField] private float _maxMoveSpeed = 12f;
-    [SerializeField] private float _linearDrag = 10f;
+    [SerializeField] private float _GroundlinearDrag = 10f;
     private float _horizontalDirection;
     private bool _changingdirection =>  (_rb.linearVelocity.x >  0f && _horizontalDirection < 0f) || (_rb.linearVelocity.x < 0f && _horizontalDirection > 0f);
 
     [Header("Jump Variables")]
-    [SerializeField] private float _jumpForce = 12f;
+    [SerializeField] private float _jumpForce = 20f;
     [SerializeField] private float _airLinearDrag = 2.5f;
+    [SerializeField] private float _fallMultiplier = 5f;
+    [SerializeField] private float _lowJumpFallMultiplier = 3f;
+
     private bool _canJump => (Input.GetButtonDown("Jump")) && _onGround;
 
     [Header("Ground Collision Variables")]
@@ -33,21 +36,23 @@ public class Movement2D : MonoBehaviour
     private void Update()
     {
         _horizontalDirection = GetInput().x;
+        if (_canJump) Jump();
     }
 
     private void FixedUpdate()
     {
         CheckCollisions();
         MoveCharacter();
-        ApplyingLinearDrag();
-        if (_canJump) Jump();
+        ApplyingGroundLinearDrag();
+        
         if (_onGround)
         {
-            ApplyingLinearDrag();
+            ApplyingGroundLinearDrag();
         }
         else
         {
-            ApplyingLinearDrag();
+            ApplyingAirLinearDrag();
+            fallMultiplier();
         }
     }
 
@@ -64,22 +69,23 @@ public class Movement2D : MonoBehaviour
         if (Mathf.Abs(_rb.linearVelocity.x) > _maxMoveSpeed)
             _rb.linearVelocity = new Vector2(Mathf.Sign(_rb.linearVelocity.x) * _maxMoveSpeed, _rb.linearVelocity.y);
     }
-    private void ApplyingLinearDrag()
+    private void ApplyingGroundLinearDrag()
     {
         if (Mathf.Abs(_horizontalDirection) < 0.4f || _changingdirection)
         {
-            _rb.linearDamping = _linearDrag;
+            _rb.linearDamping = _GroundlinearDrag;
         }
         else
         {
             _rb.linearDamping = 0f;
+            
         }
     }
     private void ApplyingAirLinearDrag()
     {
-        {
-            //_rb.drag = _airLinearDrag = 0f;
-        }
+        
+            _rb.linearDamping = _airLinearDrag;
+        
     }
     private void Jump()
     {
@@ -87,6 +93,21 @@ public class Movement2D : MonoBehaviour
         _rb.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
     }
 
+    private void fallMultiplier()
+    {
+        if (_rb.linearVelocity.y < 0)
+        {
+            _rb.gravityScale = _fallMultiplier;
+        }
+        else if (_rb.linearVelocity.y > 0 && !Input.GetButton("Jump"))
+        {
+            _rb.gravityScale = _lowJumpFallMultiplier;
+        }
+        else
+        {
+            _rb.gravityScale = 1f;
+        }
+    }
     private void CheckCollisions()
     {
         _onGround = Physics2D.Raycast(transform.position, Vector2.down, _groundRaycastLength, _groundLayer);
