@@ -437,9 +437,10 @@ MonoBehaviour:
   _GroundlinearDrag: 7
   _jumpForce: 15
   _airLinearDrag: 2.5
-  _fallMultiplier: 2
-  _lowJumpFallMultiplier: 1
-  _groundRaycastLength: 0.87
+  _fallMultiplier: 3
+  _lowJumpFallMultiplier: 2
+  _groundRaycastLength: 0.29
+  _rayCastOffset: {x: 0, y: -0.5, z: 0}
 --- !u!1 &966202896
 GameObject:
   m_ObjectHideFlags: 0

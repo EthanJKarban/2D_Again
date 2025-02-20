@@ -27,6 +27,7 @@ public class Movement2D : MonoBehaviour
 
     [Header("Ground Collision Variables")]
     [SerializeField] private float _groundRaycastLength;
+    [SerializeField] private Vector3 _rayCastOffset;
     private bool _onGround;
 
     private void Start()
@@ -110,12 +111,12 @@ public class Movement2D : MonoBehaviour
     }
     private void CheckCollisions()
     {
-        _onGround = Physics2D.Raycast(transform.position, Vector2.down, _groundRaycastLength, _groundLayer);
+        _onGround = Physics2D.BoxCast(transform.position + _rayCastOffset, new Vector2(1, _groundRaycastLength), 0, Vector2.zero, 0, _groundLayer);
     }
 
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.yellow;
-        Gizmos.DrawLine(transform.position, transform.position + Vector3.down *  _groundRaycastLength);
+        Gizmos.DrawCube(transform.position + _rayCastOffset, new Vector2(1, _groundRaycastLength));
     }
 }
