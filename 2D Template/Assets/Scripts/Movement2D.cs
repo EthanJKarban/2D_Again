@@ -15,7 +15,7 @@ public class Movement2D : MonoBehaviour
     [SerializeField] private float _maxMoveSpeed = 12f;
     [SerializeField] private float _GroundlinearDrag = 10f;
     private float _horizontalDirection;
-    private bool _changingdirection =>  (_rb.linearVelocity.x >  0f && _horizontalDirection < 0f) || (_rb.linearVelocity.x < 0f && _horizontalDirection > 0f);
+    private bool _changingdirection => (_rb.linearVelocity.x > 0f && _horizontalDirection < 0f) || (_rb.linearVelocity.x < 0f && _horizontalDirection > 0f);
 
     [Header("Jump Variables")]
     [SerializeField] private float _jumpForce = 20f;
@@ -23,6 +23,8 @@ public class Movement2D : MonoBehaviour
     [SerializeField] private float _fallMultiplier = 5f;
     [SerializeField] private float _lowJumpFallMultiplier = 3f;
     [SerializeField] private int _extraJumps = 1;
+    private float _coyoteTime = 0.2f;
+    private float _coyoteTimeCounter;
     private int _extraJumpsValue;
 
     private bool _canJump => (Input.GetButtonDown("Jump")) && (_onGround || _extraJumpsValue> 0);
@@ -53,12 +55,13 @@ public class Movement2D : MonoBehaviour
 
             _extraJumpsValue = _extraJumps;
             ApplyingGroundLinearDrag();
+            _coyoteTimeCounter = _coyoteTime;
         }
         else
         {
             ApplyingAirLinearDrag();
             fallMultiplier();
-            
+            _coyoteTimeCounter -= Time.deltaTime;
         }
     }
 
@@ -101,7 +104,7 @@ public class Movement2D : MonoBehaviour
         _rb.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
     }
 
-    private void fallMultiplier()
+    private void fallMultiplier() // Fall speed
     {
         if (_rb.linearVelocity.y < 0)
         {
