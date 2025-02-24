@@ -22,8 +22,10 @@ public class Movement2D : MonoBehaviour
     [SerializeField] private float _airLinearDrag = 2.5f;
     [SerializeField] private float _fallMultiplier = 5f;
     [SerializeField] private float _lowJumpFallMultiplier = 3f;
+    [SerializeField] private int _extraJumps = 1;
+    private int _extraJumpsValue;
 
-    private bool _canJump => (Input.GetButtonDown("Jump")) && _onGround;
+    private bool _canJump => (Input.GetButtonDown("Jump")) && (_onGround || _extraJumpsValue> 0);
 
     [Header("Ground Collision Variables")]
     [SerializeField] private float _groundRaycastLength;
@@ -48,12 +50,15 @@ public class Movement2D : MonoBehaviour
         
         if (_onGround)
         {
+
+            _extraJumpsValue = _extraJumps;
             ApplyingGroundLinearDrag();
         }
         else
         {
             ApplyingAirLinearDrag();
             fallMultiplier();
+            
         }
     }
 
@@ -90,6 +95,8 @@ public class Movement2D : MonoBehaviour
     }
     private void Jump()
     {
+        if (!_onGround)
+            _extraJumpsValue--;
         _rb.linearVelocity = new Vector2(_rb.linearVelocity.x, 0f);
         _rb.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
     }
