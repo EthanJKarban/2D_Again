@@ -23,7 +23,7 @@ public class Movement2D : MonoBehaviour
     [SerializeField] private float _fallMultiplier = 5f;
     [SerializeField] private float _lowJumpFallMultiplier = 3f;
     [SerializeField] private int _extraJumps = 1;
-    private float _coyoteTime = 0.2f;
+    private float _coyoteTime = 0.4f;
     private float _coyoteTimeCounter;
     private int _extraJumpsValue;
 
@@ -62,6 +62,7 @@ public class Movement2D : MonoBehaviour
             ApplyingAirLinearDrag();
             fallMultiplier();
             _coyoteTimeCounter -= Time.deltaTime;
+            
         }
     }
 
@@ -99,6 +100,7 @@ public class Movement2D : MonoBehaviour
     private void Jump()
     {
         if (!_onGround)
+
             _extraJumpsValue--;
         _rb.linearVelocity = new Vector2(_rb.linearVelocity.x, 0f);
         _rb.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
