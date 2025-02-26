@@ -19,7 +19,7 @@ public class MovementExtra : MonoBehaviour
    
     void Update()
     {
-        _rib.linearVelocityX = _moveAmount.x;
+        _rib.linearVelocityX = _moveAmount.x * movementSpeed;
     }
 
 
@@ -28,4 +28,7 @@ public class MovementExtra : MonoBehaviour
     {
        _moveAmount = ctx.ReadValue<Vector2>();
     }
+
+    //public void
+    //    _rib.linearVelocityY = 10;
 }
