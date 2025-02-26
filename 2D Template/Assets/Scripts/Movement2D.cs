@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem.LowLevel;
 
 public class Movement2D : MonoBehaviour
 {
@@ -23,11 +24,13 @@ public class Movement2D : MonoBehaviour
     [SerializeField] private float _fallMultiplier = 5f;
     [SerializeField] private float _lowJumpFallMultiplier = 3f;
     [SerializeField] private int _extraJumps = 1;
-    private float _coyoteTime = 0.4f;
+    private float _coyoteTime = 0.2f;
     private float _coyoteTimeCounter;
+    private float _jumpBufferTimer = 0.2f;
+    private float _jumpBufferCounter;
     private int _extraJumpsValue;
 
-    private bool _canJump => (Input.GetButtonDown("Jump")) && (_onGround || _extraJumpsValue> 0);
+    private bool _canJump => (Input.GetButtonDown("Jump")) && (_onGround || _extraJumpsValue > 0);
 
     [Header("Ground Collision Variables")]
     [SerializeField] private float _groundRaycastLength;
@@ -42,6 +45,14 @@ public class Movement2D : MonoBehaviour
     {
         _horizontalDirection = GetInput().x;
         if (_canJump) Jump();
+        if (Input.GetButtonDown("Jump"))
+        {
+            _jumpBufferCounter = _jumpBufferTimer;
+        }
+        else
+        {
+            _jumpBufferCounter -= Time.deltaTime;
+        }
     }
 
     private void FixedUpdate()
@@ -62,8 +73,16 @@ public class Movement2D : MonoBehaviour
             ApplyingAirLinearDrag();
             fallMultiplier();
             _coyoteTimeCounter -= Time.deltaTime;
+            if (_coyoteTimeCounter > 0 && _jumpBufferCounter < 0f)
+            {
+                CoyoteTime();
+            }
             
         }
+    }
+    private void CoyoteTime()
+    {
+        _onGround = true;
     }
 
 
@@ -104,6 +123,7 @@ public class Movement2D : MonoBehaviour
             _extraJumpsValue--;
         _rb.linearVelocity = new Vector2(_rb.linearVelocity.x, 0f);
         _rb.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
+
     }
 
     private void fallMultiplier() // Fall speed
