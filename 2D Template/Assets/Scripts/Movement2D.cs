@@ -77,12 +77,20 @@ public class Movement2D : MonoBehaviour
             {
                 CoyoteTime();
             }
+            else if (_jumpBufferCounter > 0 && _coyoteTimeCounter < 0f)
+            {
+                _jumpBuffed();
+            }
             
         }
     }
     private void CoyoteTime()
     {
         _onGround = true;
+    }
+    private void _jumpBuffed()
+    {
+
     }
 
 
@@ -119,11 +127,12 @@ public class Movement2D : MonoBehaviour
     private void Jump()
     {
         if (!_onGround)
-
+            if (_canJump && _extraJumpsValue > 0)
             _extraJumpsValue--;
         _rb.linearVelocity = new Vector2(_rb.linearVelocity.x, 0f);
         _rb.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
 
+         
     }
 
     private void fallMultiplier() // Fall speed

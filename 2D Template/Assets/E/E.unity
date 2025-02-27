@@ -1162,6 +1162,14 @@ PrefabInstance:
       value: MyPlayer
       objectReference: {fileID: 0}
     - target: {fileID: 8960907423128107651, guid: cbbd808a992431848be4441e03c6a2ea, type: 3}
+      propertyPath: _jumpForce
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8960907423128107651, guid: cbbd808a992431848be4441e03c6a2ea, type: 3}
+      propertyPath: _extraJumps
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8960907423128107651, guid: cbbd808a992431848be4441e03c6a2ea, type: 3}
       propertyPath: _groundRaycastLength
       value: 0.3
       objectReference: {fileID: 0}
