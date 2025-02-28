@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
@@ -21,6 +22,9 @@ public class TriggerEvent : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
-
+    public void Vanquish(string objectName)
+    {
+        
+    }
 
 }

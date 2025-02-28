@@ -73,11 +73,11 @@ public class Movement2D : MonoBehaviour
             ApplyingAirLinearDrag();
             fallMultiplier();
             _coyoteTimeCounter -= Time.deltaTime;
-            if (_coyoteTimeCounter > 0 && _jumpBufferCounter < 0f)
+            if (_coyoteTimeCounter > 0 && _jumpBufferCounter < 1f)
             {
                 CoyoteTime();
             }
-            else if (_jumpBufferCounter > 0 && _coyoteTimeCounter < 0f)
+            else if (_jumpBufferCounter > 0 && _coyoteTimeCounter < 1f)
             {
                 _jumpBuffed();
             }
@@ -90,6 +90,10 @@ public class Movement2D : MonoBehaviour
     }
     private void _jumpBuffed()
     {
+        if (!_onGround && !_canJump)
+        {
+            
+        }
 
     }
 
