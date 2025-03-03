@@ -78,10 +78,7 @@ public class Movement2D : MonoBehaviour
             {
                 CoyoteTime();
             }
-            else if (_jumpBufferCounter > 0 && _coyoteTimeCounter < 1f)
-            {
-                _jumpBuffed();
-            }
+            
             
         }
     }
@@ -89,14 +86,7 @@ public class Movement2D : MonoBehaviour
     {
         _onGround = true;
     }
-    private void _jumpBuffed()
-    {
-        if (!_onGround && !_canJump)
-        {
-            
-        }
-
-    }
+    
 
 
     private Vector2 GetInput()
