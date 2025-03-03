@@ -24,13 +24,14 @@ public class Movement2D : MonoBehaviour
     [SerializeField] private float _fallMultiplier = 5f;
     [SerializeField] private float _lowJumpFallMultiplier = 3f;
     [SerializeField] private int _extraJumps = 1;
-    private float _coyoteTime = 0.2f;
-    private float _coyoteTimeCounter;
-    private float _jumpBufferTimer = 0.2f;
-    private float _jumpBufferCounter;
     private int _extraJumpsValue;
 
-    private bool _canJump => (Input.GetButtonDown("Jump")) && (_onGround || _extraJumpsValue > 0);
+    private float _coyoteTime = 0.2f;
+    private float _coyoteTimeCounter;
+
+    private float _jumpBufferTimer = 0.2f;
+    private float _jumpBufferCounter;
+    private bool _canJump => (Input.GetButtonDown("Jump")) && (_onGround || _extraJumpsValue > 0) || (_rb.linearVelocityY <= 0 && _onGround && _jumpBufferCounter >= 0);
 
     [Header("Ground Collision Variables")]
     [SerializeField] private float _groundRaycastLength;
