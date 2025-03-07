@@ -25,7 +25,7 @@ public class Movement2D : MonoBehaviour
     [SerializeField] private float _lowJumpFallMultiplier = 3f;   // How fast you fall on short jump
     [SerializeField] private int _extraJumps = 1;
     private int _extraJumpsValue;  // Value of extra jump and extrajump amount 
-    private bool deadilyObject =>
+    //private bool deadilyObject =>
     private float _coyoteTime = 0.2f;    // Coyote time, the amount of time you have to jump when running off platform, without using an extra jump
     private float _coyoteTimeCounter;
 
