@@ -1,10 +1,25 @@
 fileFormatVersion: 2
-guid: 2303a3a040221d94b80e3c2dd07364ba
+guid: 3c6247037ea02964db9b675ad0e45673
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4074537285649808635
-    second: DirtWip_0
+      213: 1052678338299433594
+    second: Boi Walk_0
+  - first:
+      213: -2121547643132468105
+    second: Boi Walk_1
+  - first:
+      213: -4630480661144585335
+    second: Boi Walk_2
+  - first:
+      213: 8637600367761995369
+    second: Boi Walk_3
+  - first:
+      213: -7647468083845824865
+    second: Boi Walk_4
+  - first:
+      213: 3242723156575810584
+    second: Boi Walk_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +87,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 16384
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -126,23 +141,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DirtWip_0
+      name: Boi Walk_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 64
-        height: 64
+        x: 19
+        y: 128
+        width: 21
+        height: 55
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 50342c03de55477c0800000000000000
-      internalID: -4074537285649808635
+      spriteID: da9bd0523496c114b874a673dad9a601
+      internalID: -2136141736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boi Walk_1
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 128
+        width: 21
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e14b7ec6fe84e634797f8f7ffb8efd18
+      internalID: -1078008347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boi Walk_2
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 64
+        width: 21
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a425476ae3055634fa15db8f0f33b941
+      internalID: 55509879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boi Walk_3
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 64
+        width: 21
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 020e990b3f740bb4680f323aeaa7680a
+      internalID: -364422317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boi Walk_4
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 0
+        width: 21
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d82599544ea47df449155cfeef915319
+      internalID: 2130283943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boi Walk_5
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 0
+        width: 21
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 838ccd0d6ff78d047ad9fe4a5533f6bb
+      internalID: -1355703832
       vertices: []
       indices: 
       edges: []
@@ -151,7 +276,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c52535d9a70d51b4da5ae245329b1175
+    spriteID: 39b076f9b2c81754782b81af6decb446
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +286,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      DirtWip_0: -4074537285649808635
+      Boi Walk_0: -2136141736
+      Boi Walk_1: -1078008347
+      Boi Walk_2: 55509879
+      Boi Walk_3: -364422317
+      Boi Walk_4: 2130283943
+      Boi Walk_5: -1355703832
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

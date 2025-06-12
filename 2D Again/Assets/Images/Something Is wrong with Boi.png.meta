@@ -1,0 +1,897 @@
+fileFormatVersion: 2
+guid: 2f70ca9bbc00e9c4abf2bb454f2c0161
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4143395235082157355
+    second: Something Is wrong with Boi_0
+  - first:
+      213: 1148001059667473982
+    second: Something Is wrong with Boi_1
+  - first:
+      213: 9092231234207060056
+    second: Something Is wrong with Boi_2
+  - first:
+      213: 3536591405587379180
+    second: Something Is wrong with Boi_3
+  - first:
+      213: 7458016963908835415
+    second: Something Is wrong with Boi_4
+  - first:
+      213: -7624619764197844753
+    second: Something Is wrong with Boi_5
+  - first:
+      213: -49152220726647850
+    second: Something Is wrong with Boi_6
+  - first:
+      213: 1956650823952584038
+    second: Something Is wrong with Boi_7
+  - first:
+      213: 3255420849736171777
+    second: Something Is wrong with Boi_8
+  - first:
+      213: -3736619358819867598
+    second: Something Is wrong with Boi_9
+  - first:
+      213: -49761860953233967
+    second: Something Is wrong with Boi_10
+  - first:
+      213: 2381759064406055997
+    second: Something Is wrong with Boi_11
+  - first:
+      213: 8323154861931685927
+    second: Something Is wrong with Boi_12
+  - first:
+      213: 1381736143374429026
+    second: Something Is wrong with Boi_13
+  - first:
+      213: 8147959117925520371
+    second: Something Is wrong with Boi_14
+  - first:
+      213: -3388563870081783599
+    second: Something Is wrong with Boi_15
+  - first:
+      213: -2837695425700476931
+    second: Something Is wrong with Boi_16
+  - first:
+      213: -6734437878056146753
+    second: Something Is wrong with Boi_17
+  - first:
+      213: -9109007140589328130
+    second: Something Is wrong with Boi_18
+  - first:
+      213: -6562113094052009759
+    second: Something Is wrong with Boi_19
+  - first:
+      213: -5216899166152330310
+    second: Something Is wrong with Boi_20
+  - first:
+      213: 1118259430377049231
+    second: Something Is wrong with Boi_21
+  - first:
+      213: 6490551117333676034
+    second: Something Is wrong with Boi_22
+  - first:
+      213: 9117779303556451638
+    second: Something Is wrong with Boi_23
+  - first:
+      213: 5293163015408015512
+    second: Something Is wrong with Boi_24
+  - first:
+      213: 2526831820706823079
+    second: Something Is wrong with Boi_25
+  - first:
+      213: 7639081600566292576
+    second: Something Is wrong with Boi_26
+  - first:
+      213: 7521072875631849786
+    second: Something Is wrong with Boi_27
+  - first:
+      213: 4194434890922254636
+    second: Something Is wrong with Boi_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Something Is wrong with Boi_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 320
+        width: 21
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c49d1349f5811a8439bf815b679ee021
+      internalID: -469740462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Something Is wrong with Boi_1
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 320
+        width: 21
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 739c526b7f9243f47820b15520e8a551
+      internalID: 509269773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Something Is wrong with Boi_2
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 320
+        width: 21
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 959882bff93bea04eb5d651ead0609a6
+      internalID: 1004460710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Something Is wrong with Boi_3
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 320
+        width: 21
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1466e2cb8dc19bd4fb942ee0fc034515
+      internalID: -494966119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Something Is wrong with Boi_4
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 320
+        width: 21
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79915d3e4dbf49547a31eaabc2464c05
+      internalID: 1035407592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Something Is wrong with Boi_5
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 256
+        width: 21
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df098afe93ca4124d8f073f528323a34
+      internalID: 1638340491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Something Is wrong with Boi_6
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 256
+        width: 21
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 448e85d13b66d0f4e97e1d8ef2c66a24
+      internalID: -353963026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Something Is wrong with Boi_7
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 256
+        width: 21
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0c574e6ee6bb8f418137778c3c1ace7
+      internalID: 713648485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Something Is wrong with Boi_8
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 256
+        width: 21
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b4a2d15414778b44b8822b56451874f
+      internalID: -493444201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Something Is wrong with Boi_9
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 256
+        width: 21
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 103060a60062cdb4aa73c630e8a8d1fd
+      internalID: -197987031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Something Is wrong with Boi_10
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 192
+        width: 21
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72b54aa08b1e1b4429b9dc88168c7514
+      internalID: -310431088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Something Is wrong with Boi_11
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 192
+        width: 21
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10c7146be969c9844b89a67209e34bca
+      internalID: 939474167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Something Is wrong with Boi_12
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 192
+        width: 21
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 170cd0bdc0917aa4e900711b1c8acb73
+      internalID: -1800313274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Something Is wrong with Boi_13
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 192
+        width: 34
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d5675dec703219468c5fd771dd32478
+      internalID: -1525349481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Something Is wrong with Boi_14
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 192
+        width: 31
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3503bbd139059d41abf55c76973e7ee
+      internalID: -930355331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Something Is wrong with Boi_15
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 128
+        width: 23
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc302a98e7f35644fafd1699ede4514a
+      internalID: 1105403215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Something Is wrong with Boi_16
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 128
+        width: 21
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87230014671b1a942b4ab5a002472d3e
+      internalID: -1073242380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Something Is wrong with Boi_17
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 128
+        width: 25
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1e044afa921cdd419b640d913106a08
+      internalID: -136866975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Something Is wrong with Boi_18
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 128
+        width: 33
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5118ea881a48ff8418f0efa724edc41b
+      internalID: 1198152703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Something Is wrong with Boi_19
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 128
+        width: 38
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d41a9f61553b9245a64baee53711825
+      internalID: 627253982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Something Is wrong with Boi_20
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 64
+        width: 27
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcb5067147cbb584fa054677989be91b
+      internalID: 1959021399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Something Is wrong with Boi_21
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 64
+        width: 25
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d55a8e73749cb046b1a0ed2a3b9b9b3
+      internalID: 1846855497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Something Is wrong with Boi_22
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 64
+        width: 21
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2a0de71556ed674c90e3f95026cb381
+      internalID: 1413582475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Something Is wrong with Boi_23
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 64
+        width: 21
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a489888ecaca8934ab458199ff1a7efe
+      internalID: -846257725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Something Is wrong with Boi_24
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 64
+        width: 21
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3147ab2544eee64593c60c3fa42ae41
+      internalID: -1984079542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Something Is wrong with Boi_25
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 0
+        width: 21
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17082c8f65302934fb413dbe1dac9372
+      internalID: 1969072065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Something Is wrong with Boi_26
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 0
+        width: 21
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 158c95c20bfd4e24c9c51fae72710f46
+      internalID: -1220532746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Something Is wrong with Boi_27
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 0
+        width: 21
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8402c678be407224fbecc64a215b886b
+      internalID: -310946454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Something Is wrong with Boi_28
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 0
+        width: 21
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b59c1190bb837944b9751bbe6d8b663
+      internalID: -1853473013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 23db28077f0e75c4985b2b6969a86671
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Something Is wrong with Boi_0: -469740462
+      Something Is wrong with Boi_1: 509269773
+      Something Is wrong with Boi_10: -310431088
+      Something Is wrong with Boi_11: 939474167
+      Something Is wrong with Boi_12: -1800313274
+      Something Is wrong with Boi_13: -1525349481
+      Something Is wrong with Boi_14: -930355331
+      Something Is wrong with Boi_15: 1105403215
+      Something Is wrong with Boi_16: -1073242380
+      Something Is wrong with Boi_17: -136866975
+      Something Is wrong with Boi_18: 1198152703
+      Something Is wrong with Boi_19: 627253982
+      Something Is wrong with Boi_2: 1004460710
+      Something Is wrong with Boi_20: 1959021399
+      Something Is wrong with Boi_21: 1846855497
+      Something Is wrong with Boi_22: 1413582475
+      Something Is wrong with Boi_23: -846257725
+      Something Is wrong with Boi_24: -1984079542
+      Something Is wrong with Boi_25: 1969072065
+      Something Is wrong with Boi_26: -1220532746
+      Something Is wrong with Boi_27: -310946454
+      Something Is wrong with Boi_28: -1853473013
+      Something Is wrong with Boi_3: -494966119
+      Something Is wrong with Boi_4: 1035407592
+      Something Is wrong with Boi_5: 1638340491
+      Something Is wrong with Boi_6: -353963026
+      Something Is wrong with Boi_7: 713648485
+      Something Is wrong with Boi_8: -493444201
+      Something Is wrong with Boi_9: -197987031
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

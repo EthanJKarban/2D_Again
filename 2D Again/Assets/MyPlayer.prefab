@@ -182,7 +182,7 @@ MonoBehaviour:
   _maxMoveSpeed: 10
   _GroundlinearDrag: 15
   _jumpForce: 15
-  _airLinearDrag: 2.5
+  _airLinearDrag: 3
   _fallMultiplier: 5
   _lowJumpFallMultiplier: 3
   _extraJumps: 1
