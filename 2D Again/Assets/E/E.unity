@@ -2990,7 +2990,7 @@ MonoBehaviour:
       Size: {x: 0.199115, y: 0.4}
     HardLimits:
       Enabled: 1
-      Size: {x: 0.5, y: 0.56}
+      Size: {x: 0.66460097, y: 0.6468167}
       Offset: {x: 0, y: 0}
   CenterOnActivate: 1
   TargetOffset: {x: 0, y: 0, z: 0}
@@ -3052,7 +3052,7 @@ Transform:
   m_GameObject: {fileID: 1548217600}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.4839268, y: 0.2926016, z: -10}
+  m_LocalPosition: {x: 2.536559, y: 0.2926016, z: -10}
   m_LocalScale: {x: 0, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3299,7 +3299,7 @@ Transform:
   m_GameObject: {fileID: 1718331399}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 27.05, y: 5, z: 0}
+  m_LocalPosition: {x: 26.62, y: 6.08, z: 0}
   m_LocalScale: {x: 24.6339, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3316,26 +3316,34 @@ PrefabInstance:
     - target: {fileID: 1446811759767158072, guid: cbbd808a992431848be4441e03c6a2ea, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 5628033340940924979, guid: 073d82ae0173df0458cb64fcdf39690b, type: 3}
+      objectReference: {fileID: -7482791423566851318, guid: 22a747a8c09f6134ca2eb1b8310e52f3, type: 3}
     - target: {fileID: 1446811759767158072, guid: cbbd808a992431848be4441e03c6a2ea, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     - target: {fileID: 2084532833226252650, guid: cbbd808a992431848be4441e03c6a2ea, type: 3}
+      propertyPath: m_Size.x
+      value: 0.8862884
+      objectReference: {fileID: 0}
+    - target: {fileID: 2084532833226252650, guid: cbbd808a992431848be4441e03c6a2ea, type: 3}
       propertyPath: m_Size.y
-      value: 1
+      value: 1.5649841
+      objectReference: {fileID: 0}
+    - target: {fileID: 2084532833226252650, guid: cbbd808a992431848be4441e03c6a2ea, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.056855798
       objectReference: {fileID: 0}
     - target: {fileID: 2084532833226252650, guid: cbbd808a992431848be4441e03c6a2ea, type: 3}
       propertyPath: m_Offset.y
-      value: 0
+      value: -0.15193439
       objectReference: {fileID: 0}
     - target: {fileID: 2084532833226252650, guid: cbbd808a992431848be4441e03c6a2ea, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 0.55
+      value: 1.875
       objectReference: {fileID: 0}
     - target: {fileID: 2084532833226252650, guid: cbbd808a992431848be4441e03c6a2ea, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.4
+      value: 1.875
       objectReference: {fileID: 0}
     - target: {fileID: 3368404072251794843, guid: cbbd808a992431848be4441e03c6a2ea, type: 3}
       propertyPath: m_LocalScale.y
@@ -3391,7 +3399,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8316797463440375506, guid: cbbd808a992431848be4441e03c6a2ea, type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 1.3870273
       objectReference: {fileID: 0}
     - target: {fileID: 8316797463440375506, guid: cbbd808a992431848be4441e03c6a2ea, type: 3}
       propertyPath: m_BodyType
@@ -3419,7 +3427,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8960907423128107651, guid: cbbd808a992431848be4441e03c6a2ea, type: 3}
       propertyPath: _jumpForce
-      value: 15
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8960907423128107651, guid: cbbd808a992431848be4441e03c6a2ea, type: 3}
       propertyPath: _extraJumps
@@ -3427,7 +3435,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8960907423128107651, guid: cbbd808a992431848be4441e03c6a2ea, type: 3}
       propertyPath: _maxMoveSpeed
-      value: 12
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8960907423128107651, guid: cbbd808a992431848be4441e03c6a2ea, type: 3}
       propertyPath: _airLinearDrag
@@ -3438,12 +3446,24 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8960907423128107651, guid: cbbd808a992431848be4441e03c6a2ea, type: 3}
+      propertyPath: _rayCastOffset.x
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 8960907423128107651, guid: cbbd808a992431848be4441e03c6a2ea, type: 3}
+      propertyPath: _rayCastOffset.y
+      value: -0.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 8960907423128107651, guid: cbbd808a992431848be4441e03c6a2ea, type: 3}
+      propertyPath: _rayCastOffset.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8960907423128107651, guid: cbbd808a992431848be4441e03c6a2ea, type: 3}
       propertyPath: _GroundlinearDrag
       value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8960907423128107651, guid: cbbd808a992431848be4441e03c6a2ea, type: 3}
       propertyPath: _groundRaycastLength
-      value: 0.3
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: 8960907423128107651, guid: cbbd808a992431848be4441e03c6a2ea, type: 3}
       propertyPath: _movementAcceleration

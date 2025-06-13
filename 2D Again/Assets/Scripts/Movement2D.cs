@@ -7,6 +7,7 @@ public class Movement2D : MonoBehaviour
 {
     [Header("Components")]
     private Rigidbody2D _rb;
+    private SpriteRenderer _spriteRenderer;
 
     [Header("Layer Masks")]
     [SerializeField] private LayerMask _groundLayer;  // Helps us detect what is and isn't the ground, look for _onGround on checkCollision to find it :D
@@ -35,7 +36,7 @@ public class Movement2D : MonoBehaviour
     
 
 
-
+    
 
 
 
@@ -50,6 +51,7 @@ public class Movement2D : MonoBehaviour
 
     private void Start()
     {
+        _spriteRenderer = GetComponent<SpriteRenderer>();
         _rb = GetComponent<Rigidbody2D>();    // We get our rigidBody2D
     }
     private void Update()
@@ -71,7 +73,7 @@ public class Movement2D : MonoBehaviour
         CheckCollisions();  //Check on ground
         MoveCharacter(); // Checking what key we are doing and what direction
         ApplyingGroundLinearDrag();  // Applying drag on movement
-        
+        SpriteFlipper();
         if (_onGround)
         {
 
@@ -153,6 +155,17 @@ public class Movement2D : MonoBehaviour
         else
         {
             _rb.gravityScale = 1f;  // Setting our gravity to 1
+        }
+    }
+    private void SpriteFlipper()
+    {
+        if (_rb.linearVelocity.x < 0f && _horizontalDirection > 0f)
+        {
+            _spriteRenderer.flipX = false;
+        }
+        else if (_rb.linearVelocity.x > 0f && _horizontalDirection < 0f)
+        {
+            _spriteRenderer.flipX = true;
         }
     }
     private void CheckCollisions()
