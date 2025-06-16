@@ -8,6 +8,7 @@ public class Movement2D : MonoBehaviour
     [Header("Components")]
     private Rigidbody2D _rb;
     private SpriteRenderer _spriteRenderer;
+    private Animator _animator;
 
     [Header("Layer Masks")]
     [SerializeField] private LayerMask _groundLayer;  // Helps us detect what is and isn't the ground, look for _onGround on checkCollision to find it :D
@@ -51,8 +52,9 @@ public class Movement2D : MonoBehaviour
 
     private void Start()
     {
-        _spriteRenderer = GetComponent<SpriteRenderer>();
+        _spriteRenderer = GetComponent<SpriteRenderer>(); // This spriterenderer so far is only used to flip X because I want it to look both ways 
         _rb = GetComponent<Rigidbody2D>();    // We get our rigidBody2D
+        _animator = GetComponent<Animator>(); // Animator accquired for ... you already know.... if you don't it's animations for the playerCharacter.
     }
     private void Update()
     {

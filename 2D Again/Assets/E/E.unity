@@ -2984,10 +2984,10 @@ MonoBehaviour:
   CameraDistance: 10
   DeadZoneDepth: 0
   Composition:
-    ScreenPosition: {x: -0.06283202, y: 0.022507802}
+    ScreenPosition: {x: -0.06283225, y: 0.022507876}
     DeadZone:
       Enabled: 1
-      Size: {x: 0.199115, y: 0.4}
+      Size: {x: 0.39504117, y: 0.4503705}
     HardLimits:
       Enabled: 1
       Size: {x: 0.66460097, y: 0.6468167}
@@ -3052,7 +3052,7 @@ Transform:
   m_GameObject: {fileID: 1548217600}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.536559, y: 0.2926016, z: -10}
+  m_LocalPosition: {x: 1.622622, y: 0.2926023, z: -10}
   m_LocalScale: {x: 0, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
